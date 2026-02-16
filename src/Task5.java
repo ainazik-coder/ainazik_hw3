@@ -1,15 +1,17 @@
 import java.util.*;
 
-public class Task1 {
+public class Task5 {
     public static void main(String[] args) {
 
         HashMap<String, Integer> students = new HashMap<>();
 
         students.put("Aida", 85);
-        students.put("Azat", 92);
         students.put("Dana", 77);
 
-        System.out.println("Map: " + students);
-        System.out.println("Size: " + students.size());
+        System.out.println("Is empty before clear? " + students.isEmpty());
+
+        students.clear();
+
+        System.out.println("Is empty after clear? " + students.isEmpty());
     }
 }
